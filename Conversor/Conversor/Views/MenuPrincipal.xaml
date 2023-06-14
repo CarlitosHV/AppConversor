@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Conversor.Views.MenuPrincipal"
+             xmlns:local="clr-namespace:Conversor">
+    <StackLayout BackgroundColor="#DEDEDE">
+        <Label Text="Conversor" 
+               HorizontalOptions="Center"
+               FontSize="Medium"/>
+        <Frame VerticalOptions="FillAndExpand">
+            <StackLayout>
+                <Image Source="{local:ImageResource Conversor.images.regla.png}"/>
+            </StackLayout>
+        </Frame>
+    </StackLayout>
+</ContentPage>
