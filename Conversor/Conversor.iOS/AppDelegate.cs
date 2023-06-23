@@ -23,6 +23,10 @@ namespace Conversor.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
+            UIApplication.SharedApplication.StatusBarStyle = UIStatusBarStyle.LightContent;
+            UIView statusBar = new UIView(UIApplication.SharedApplication.StatusBarFrame);
+            statusBar.BackgroundColor = UIColor.FromRGB(137, 151, 82);   
+            Window.AddSubview(statusBar);
             LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);

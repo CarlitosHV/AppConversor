@@ -1,7 +1,9 @@
 ﻿using Conversor.Views;
 using System;
+using System.Drawing;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using Color = Xamarin.Forms.Color;
 
 namespace Conversor
 {

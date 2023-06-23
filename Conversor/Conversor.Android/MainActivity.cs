@@ -13,6 +13,8 @@ namespace Conversor.Droid
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
+            Window.SetStatusBarColor(Android.Graphics.Color.ParseColor("#899752"));
+
 
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);

@@ -13,11 +13,13 @@
 
   <ItemGroup>
     <None Remove="images\converter.png" />
+    <None Remove="images\ico_back.png" />
     <None Remove="images\regla.png" />
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Include="images\converter.png" />
+    <EmbeddedResource Include="images\ico_back.png" />
     <EmbeddedResource Include="images\regla.png" />
   </ItemGroup>
 
@@ -33,6 +35,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="Views\ConversorView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Views\MenuPrincipal.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>

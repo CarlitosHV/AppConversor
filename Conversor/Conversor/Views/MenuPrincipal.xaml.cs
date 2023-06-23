@@ -16,5 +16,10 @@ namespace Conversor.Views
         {
             InitializeComponent();
         }
+
+        private async void OnIniciarClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ConversorView());
+        }
     }
 }

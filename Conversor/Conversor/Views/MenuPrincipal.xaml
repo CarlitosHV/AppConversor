@@ -3,14 +3,46 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Conversor.Views.MenuPrincipal"
              xmlns:local="clr-namespace:Conversor">
-    <StackLayout BackgroundColor="#DEDEDE">
-        <Label Text="Conversor" 
+    <Grid BackgroundColor="#899752">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Label Text="Creado por Carlos Hernandez"
                HorizontalOptions="Center"
-               FontSize="Medium"/>
-        <Frame VerticalOptions="FillAndExpand">
-            <StackLayout>
-                <Image Source="{local:ImageResource Conversor.images.regla.png}"/>
-            </StackLayout>
+               FontSize="Medium"
+               FontFamily="Roboto"
+               VerticalOptions="Center"
+               Margin="15"
+               TextColor="#f6f8ee" />
+        <Frame Grid.Row="1"
+               VerticalOptions="CenterAndExpand"
+               CornerRadius="40"
+               Margin="10"
+               HasShadow="true">
+            <Grid RowSpacing="60">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Image Grid.Row="0"
+                       Source="{local:ImageResource Conversor.images.regla.png}" />
+                <Label Grid.Row="1"
+                       Text="Conversor de unidades"
+                       HorizontalOptions="Center"
+                       FontSize="Medium"
+                       FontFamily="Roboto" />
+                <Button Grid.Row="2"
+                        Text="Iniciar"
+                        BackgroundColor="#95aa61"
+                        TextColor="#f6f8ee"
+                        CornerRadius="20"
+                        HeightRequest="50"
+                        WidthRequest="160"
+                        HorizontalOptions="Center" 
+                        Clicked="OnIniciarClicked"/>
+            </Grid>
         </Frame>
-    </StackLayout>
+    </Grid>
 </ContentPage>
